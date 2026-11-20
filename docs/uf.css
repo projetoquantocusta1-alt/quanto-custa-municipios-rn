@@ -11,3 +11,9 @@
 .ep-barra i { display: block; height: 100%; background: #2463A6; }
 .a-pagar { color: #9A5B00; font-weight: 600; }
 @media (max-width: 560px) { .ep-nums { grid-template-columns: 1fr; } .ep-nums b { font-size: 16px; } }
+.limite details summary { cursor: pointer; list-style: none; }
+.limite details summary::-webkit-details-marker { display: none; }
+.limite details summary::after { content: " ▾"; color: #2463A6; font-weight: 700; }
+.limite details[open] summary::after { content: " ▴"; }
+.limite details summary:focus-visible { outline: 2px solid #2463A6; outline-offset: 2px; border-radius: 4px; }
+.limite details p { margin: 8px 0 0; }
